@@ -1,0 +1,32 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# build output
+dist
+build
+.turbo
+*.tsbuildinfo
+
+# env
+.env
+.env.local
+.env.*.local
+
+# logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Generated sample PDFs are committed so downloads work on the hosted API.
+# (regenerate any time with `pnpm seed`)
+
+# local scratch mongo data (use docker compose instead)
+.mongo-data
+
+# editor / os
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea

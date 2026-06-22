@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <title>ResourceVault — The resource library your members actually use</title>
+    <meta
+      name="description"
+      content="ResourceVault is the centralised resource library for professional membership organisations — a beautiful, searchable home for the guides, templates, research, and toolkits your members rely on."
+    />
+    <meta name="theme-color" content="#4f46e5" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ResourceVault — The resource library your members actually use" />
+    <meta
+      property="og:description"
+      content="A beautiful, searchable home for the guides, templates, research, and toolkits your members rely on."
+    />
+    <meta property="og:image" content="/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ResourceVault" />
+    <meta
+      name="twitter:description"
+      content="The resource library your members actually use."
+    />
+    <meta name="twitter:image" content="/og-image.svg" />
+
+    <!-- Prevent theme flash: apply stored/system theme before paint -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("rv-theme");
+          var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var dark = stored ? stored === "dark" : prefersDark;
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

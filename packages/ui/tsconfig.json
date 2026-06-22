@@ -1,0 +1,9 @@
+{
+  "extends": "@resourcevault/config/tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["ES2023", "DOM"],
+    "outDir": "dist"
+  },
+  "include": ["src/**/*.ts"]
+}

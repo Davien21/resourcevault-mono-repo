@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1020" />
+      <stop offset="1" stop-color="#171a3a" />
+    </linearGradient>
+    <linearGradient id="mark" x1="80" y1="80" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366f1" />
+      <stop offset="0.5" stop-color="#8b5cf6" />
+      <stop offset="1" stop-color="#d946ef" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.1" r="0.8">
+      <stop stop-color="#6366f1" stop-opacity="0.45" />
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <g transform="translate(90, 86)">
+    <rect width="96" height="96" rx="22" fill="url(#mark)" />
+    <path d="M30 24h20c9 0 15 5.4 15 13.5 0 6-3.4 10.5-9 12.3L67 72H55.6l-10-20H46V72H30V24Zm16 20.4h9c3.9 0 6.3-2.1 6.3-5.5 0-3.3-2.4-5.4-6.3-5.4H46v10.9Z" fill="white"/>
+  </g>
+  <text x="206" y="150" font-family="Space Grotesk, Inter, sans-serif" font-size="48" font-weight="700" fill="#ffffff">ResourceVault</text>
+  <text x="90" y="330" font-family="Space Grotesk, Inter, sans-serif" font-size="78" font-weight="700" fill="#ffffff" letter-spacing="-2">The resource library your</text>
+  <text x="90" y="420" font-family="Space Grotesk, Inter, sans-serif" font-size="78" font-weight="700" letter-spacing="-2">
+    <tspan fill="#ffffff">members </tspan><tspan fill="#a5b4fc">actually use.</tspan>
+  </text>
+  <text x="90" y="500" font-family="Inter, sans-serif" font-size="30" fill="#9aa3c7">Guides � Templates � Research � Toolkits � Checklists � Policy</text>
+  <text x="90" y="585" font-family="Inter, sans-serif" font-size="24" fill="#6b73a0">For professional &amp; membership organisations</text>
+</svg>

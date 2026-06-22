@@ -1,0 +1,17 @@
+{
+  "name": "@resourcevault/config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./env": "./src/env.ts"
+  },
+  "scripts": {
+    "lint": "echo 'no lint for config'",
+    "typecheck": "echo 'no typecheck for config'"
+  },
+  "dependencies": {
+    "zod": "^3.25.20"
+  }
+}

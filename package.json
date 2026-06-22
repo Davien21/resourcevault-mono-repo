@@ -1,0 +1,24 @@
+{
+  "name": "resourcevault-mono-repo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ResourceVault — a centralised resource library for professional membership organisations.",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.8.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "seed": "pnpm --filter @resourcevault/db seed",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "setup": "pnpm install && pnpm --filter @resourcevault/db seed"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.3",
+    "typescript": "^5.8.3"
+  }
+}

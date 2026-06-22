@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4 {
+    font-family: "Space Grotesk", Inter, sans-serif;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1200px] px-5 sm:px-8;
+  }
+
+  .surface {
+    @apply rounded-2xl border bg-card shadow-sm;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border bg-background/60 px-3 py-1 text-xs font-medium text-muted-foreground;
+  }
+
+  .link-underline {
+    @apply relative after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-current after:transition-all hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    background-size: 200% auto;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.6) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.6) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 50%, transparent 100%);
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 50%, transparent 100%);
+  }
+
+  .mask-fade-r {
+    -webkit-mask-image: linear-gradient(to right, #000 70%, transparent 100%);
+    mask-image: linear-gradient(to right, #000 70%, transparent 100%);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Markdown / docs typography */
+.prose-rv {
+  @apply text-[15px] leading-7 text-muted-foreground;
+}
+.prose-rv h2 {
+  @apply mt-8 mb-3 text-xl font-semibold text-foreground;
+}
+.prose-rv h3 {
+  @apply mt-6 mb-2 text-lg font-semibold text-foreground;
+}
+.prose-rv p {
+  @apply my-3;
+}
+.prose-rv ul {
+  @apply my-3 space-y-1.5 pl-1;
+}
+.prose-rv li {
+  @apply relative pl-6;
+}
+.prose-rv li::before {
+  content: "";
+  @apply absolute left-1 top-[0.6rem] h-1.5 w-1.5 rounded-full bg-primary;
+}
+.prose-rv strong {
+  @apply font-semibold text-foreground;
+}
+.prose-rv a {
+  @apply font-medium text-primary underline underline-offset-2;
+}

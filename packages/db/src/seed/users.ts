@@ -1,0 +1,172 @@
+import type { UserRole } from "@resourcevault/types";
+
+export interface UserSeed {
+  name: string;
+  email: string;
+  password: string;
+  role: UserRole;
+  title: string;
+  bio: string;
+  organisation: string;
+  isVerified: boolean;
+  /** Demo credentials surfaced on the login screen. */
+  demo?: boolean;
+}
+
+export const DEMO_PASSWORD = "Demo1234!";
+
+export const userSeeds: UserSeed[] = [
+  {
+    name: "Dr. Amara Okafor",
+    email: "admin@resourcevault.demo",
+    password: DEMO_PASSWORD,
+    role: "admin",
+    title: "Director of Knowledge & Standards",
+    bio: "Public health physician leading ICPH's knowledge programme. Oversees the resource library, review board, and member education.",
+    organisation: "Institute for Community & Public Health",
+    isVerified: true,
+    demo: true,
+  },
+  {
+    name: "James Whitfield",
+    email: "contributor@resourcevault.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Senior Community Health Specialist",
+    bio: "Designs outreach programmes for hard-to-reach communities and contributes field-tested toolkits to the library.",
+    organisation: "Northbridge Community Health Partnership",
+    isVerified: true,
+    demo: true,
+  },
+  {
+    name: "Priya Nair",
+    email: "member@resourcevault.demo",
+    password: DEMO_PASSWORD,
+    role: "member",
+    title: "Health Promotion Practitioner",
+    bio: "Frontline practitioner using ICPH resources to plan and deliver local health promotion campaigns.",
+    organisation: "Eastvale Council Public Health Team",
+    isVerified: true,
+    demo: true,
+  },
+  {
+    name: "Dr. Marcus Bell",
+    email: "marcus.bell@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Consultant in Public Health Medicine",
+    bio: "Leads evidence reviews and authors clinical guidance for the Institute's standards programme.",
+    organisation: "Institute for Community & Public Health",
+    isVerified: true,
+  },
+  {
+    name: "Sofia Reyes",
+    email: "sofia.reyes@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Research Lead, Health Equity",
+    bio: "Health services researcher focused on the social determinants of health and equity-driven service design.",
+    organisation: "Institute for Community & Public Health",
+    isVerified: true,
+  },
+  {
+    name: "Daniel Osei",
+    email: "daniel.osei@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Digital Health Programme Manager",
+    bio: "Builds data dashboards and digital pathways for population health teams across the network.",
+    organisation: "Institute for Community & Public Health",
+    isVerified: true,
+  },
+  {
+    name: "Hannah Lindqvist",
+    email: "hannah.lindqvist@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Safeguarding & Ethics Adviser",
+    bio: "Advises members on consent, confidentiality, and safeguarding duties in community settings.",
+    organisation: "Institute for Community & Public Health",
+    isVerified: true,
+  },
+  {
+    name: "Tomas Varga",
+    email: "tomas.varga@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Workforce Development Lead",
+    bio: "Designs CPD pathways and competency frameworks for the public health workforce.",
+    organisation: "Institute for Community & Public Health",
+    isVerified: true,
+  },
+  {
+    name: "Dr. Yusuf Rahman",
+    email: "yusuf.rahman@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Consultant in Communicable Disease Control",
+    bio: "Leads outbreak guidance and authors the Institute's communicable disease standards.",
+    organisation: "Institute for Community & Public Health",
+    isVerified: true,
+  },
+  {
+    name: "Aisha Bello",
+    email: "aisha.bello@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Health Visitor Team Lead",
+    bio: "Specialises in early years, immunisation, and family health, and contributes practical clinic resources.",
+    organisation: "Northbridge Community Health Partnership",
+    isVerified: true,
+  },
+  {
+    name: "Niamh O'Sullivan",
+    email: "niamh.osullivan@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Public Health Registrar",
+    bio: "Public health trainee writing evidence briefings and needs-assessment toolkits.",
+    organisation: "Eastvale Council Public Health Team",
+    isVerified: true,
+  },
+  {
+    name: "David Chen",
+    email: "david.chen@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Health Economist",
+    bio: "Builds the economic case for prevention and contributes commissioning and ROI toolkits.",
+    organisation: "Institute for Community & Public Health",
+    isVerified: true,
+  },
+  {
+    name: "Fatima Khan",
+    email: "fatima.khan@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "contributor",
+    title: "Health Improvement Specialist",
+    bio: "Designs behaviour-change campaigns and health promotion toolkits for local teams.",
+    organisation: "Riverside Health Collaborative",
+    isVerified: true,
+  },
+  {
+    name: "Grace Adeyemi",
+    email: "grace.adeyemi@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "member",
+    title: "Outreach Coordinator",
+    bio: "Coordinates vaccination and screening outreach across three boroughs.",
+    organisation: "Riverside Health Collaborative",
+    isVerified: true,
+  },
+  {
+    name: "Liam Connolly",
+    email: "liam.connolly@icph.demo",
+    password: DEMO_PASSWORD,
+    role: "member",
+    title: "Environmental Health Officer",
+    bio: "Works on housing, air quality, and food safety in a busy metropolitan district.",
+    organisation: "Eastvale Council Public Health Team",
+    isVerified: true,
+  },
+];
