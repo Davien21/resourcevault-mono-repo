@@ -134,7 +134,7 @@ export function pdfSectionsFor(
     },
     {
       heading: "About this collection",
-      body: `This document belongs to the ${categoryName} collection of the ResourceVault library and is provided as a demonstration document for evaluation purposes.`,
+      body: `This document belongs to the ${categoryName} collection of the ResourceVault library.`,
     },
   ];
 }

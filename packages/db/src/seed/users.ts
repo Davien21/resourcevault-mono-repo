@@ -9,8 +9,6 @@ export interface UserSeed {
   bio: string;
   organisation: string;
   isVerified: boolean;
-  /** Demo credentials surfaced on the login screen. */
-  demo?: boolean;
 }
 
 export const DEMO_PASSWORD = "Demo1234!";
@@ -18,40 +16,37 @@ export const DEMO_PASSWORD = "Demo1234!";
 export const userSeeds: UserSeed[] = [
   {
     name: "Dr. Amara Okafor",
-    email: "admin@resourcevault.demo",
+    email: "admin@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "admin",
     title: "Director of Knowledge & Standards",
     bio: "Public health physician leading ICPH's knowledge programme. Oversees the resource library, review board, and member education.",
     organisation: "Institute for Community & Public Health",
     isVerified: true,
-    demo: true,
   },
   {
     name: "James Whitfield",
-    email: "contributor@resourcevault.demo",
+    email: "contributor@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Senior Community Health Specialist",
     bio: "Designs outreach programmes for hard-to-reach communities and contributes field-tested toolkits to the library.",
     organisation: "Northbridge Community Health Partnership",
     isVerified: true,
-    demo: true,
   },
   {
     name: "Priya Nair",
-    email: "member@resourcevault.demo",
+    email: "member@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "member",
     title: "Health Promotion Practitioner",
     bio: "Frontline practitioner using ICPH resources to plan and deliver local health promotion campaigns.",
     organisation: "Eastvale Council Public Health Team",
     isVerified: true,
-    demo: true,
   },
   {
     name: "Dr. Marcus Bell",
-    email: "marcus.bell@icph.demo",
+    email: "marcus.bell@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Consultant in Public Health Medicine",
@@ -61,7 +56,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "Sofia Reyes",
-    email: "sofia.reyes@icph.demo",
+    email: "sofia.reyes@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Research Lead, Health Equity",
@@ -71,7 +66,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "Daniel Osei",
-    email: "daniel.osei@icph.demo",
+    email: "daniel.osei@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Digital Health Programme Manager",
@@ -81,7 +76,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "Hannah Lindqvist",
-    email: "hannah.lindqvist@icph.demo",
+    email: "hannah.lindqvist@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Safeguarding & Ethics Adviser",
@@ -91,7 +86,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "Tomas Varga",
-    email: "tomas.varga@icph.demo",
+    email: "tomas.varga@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Workforce Development Lead",
@@ -101,7 +96,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "Dr. Yusuf Rahman",
-    email: "yusuf.rahman@icph.demo",
+    email: "yusuf.rahman@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Consultant in Communicable Disease Control",
@@ -111,7 +106,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "Aisha Bello",
-    email: "aisha.bello@icph.demo",
+    email: "aisha.bello@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Health Visitor Team Lead",
@@ -121,7 +116,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "Niamh O'Sullivan",
-    email: "niamh.osullivan@icph.demo",
+    email: "niamh.osullivan@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Public Health Registrar",
@@ -131,7 +126,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "David Chen",
-    email: "david.chen@icph.demo",
+    email: "david.chen@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Health Economist",
@@ -141,7 +136,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "Fatima Khan",
-    email: "fatima.khan@icph.demo",
+    email: "fatima.khan@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "contributor",
     title: "Health Improvement Specialist",
@@ -151,7 +146,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "Grace Adeyemi",
-    email: "grace.adeyemi@icph.demo",
+    email: "grace.adeyemi@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "member",
     title: "Outreach Coordinator",
@@ -161,7 +156,7 @@ export const userSeeds: UserSeed[] = [
   },
   {
     name: "Liam Connolly",
-    email: "liam.connolly@icph.demo",
+    email: "liam.connolly@resourcevault.xyz",
     password: DEMO_PASSWORD,
     role: "member",
     title: "Environmental Health Officer",

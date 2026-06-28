@@ -81,7 +81,7 @@ export function generateResourcePdf(
       .fontSize(9)
       .fill("#9ca3af")
       .text(
-        `${meta.organisation} · ResourceVault demo document · Not for clinical use.`,
+        `${meta.organisation} · ResourceVault · Not for clinical use.`,
         56,
         doc.page.height - 60,
         { width: doc.page.width - 112, align: "center" }

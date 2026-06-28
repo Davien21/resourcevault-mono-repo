@@ -97,10 +97,10 @@ async function run() {
   // so ownership is spread across many distinct people.
   const owners = createdUsers.filter((u) => u.role === "contributor");
   const demoContributor = createdUsers.find(
-    (u) => u.email === "contributor@resourcevault.demo"
+    (u) => u.email === "contributor@resourcevault.xyz"
   )!;
   const demoMember = createdUsers.find(
-    (u) => u.email === "member@resourcevault.demo"
+    (u) => u.email === "member@resourcevault.xyz"
   )!;
   const admin = createdUsers.find((u) => u.role === "admin")!;
 
@@ -262,10 +262,10 @@ async function run() {
   console.log(`   ✓ ${activities.length} activity entries`);
 
   console.log("\n✅ Seed complete.\n");
-  console.log("   Demo credentials (password for all: Demo1234!):");
-  console.log("     • Admin       → admin@resourcevault.demo");
-  console.log("     • Contributor → contributor@resourcevault.demo");
-  console.log("     • Member      → member@resourcevault.demo\n");
+  console.log("   Sign-in credentials (password for all: Demo1234!):");
+  console.log("     • Admin       → admin@resourcevault.xyz");
+  console.log("     • Contributor → contributor@resourcevault.xyz");
+  console.log("     • Member      → member@resourcevault.xyz\n");
 
   await disconnectFromDatabase();
 }
