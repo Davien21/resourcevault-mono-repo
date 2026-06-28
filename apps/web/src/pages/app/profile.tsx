@@ -90,7 +90,7 @@ export function ProfilePage() {
             <Label>Email</Label>
             <Input value={user.email} disabled />
             <p className="text-xs text-muted-foreground">
-              Email can't be changed in this demo.
+              Contact an administrator to change your email.
             </p>
           </div>
           <Button type="submit" variant="gradient" disabled={saving}>

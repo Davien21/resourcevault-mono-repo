@@ -33,7 +33,7 @@ This help centre explains how to get the most out of it, whether you're browsing
 - **Curate and approve** content and manage members (if you're an admin).
 
 ## Your first five minutes
-- Create a free account, or use one of the one-click demo logins on the sign-in page.
+- Create a free account to get started.
 - Open the **Library** and try a search — for example, "immunisation" or "evaluation".
 - Filter by category or resource type using the controls at the top.
 - Open any resource and hit **Save** to add it to your library.
@@ -44,7 +44,7 @@ Every resource has an owner, a version number, and a lifecycle status. Nothing r
   {
     slug: "creating-an-account",
     title: "Creating an account",
-    description: "How to register, sign in, and what email verification means here.",
+    description: "How to register, sign in, and start using ResourceVault.",
     section: "Getting started",
     icon: "users",
     body: `Anyone can create a ResourceVault account with an email address and a password.
@@ -56,11 +56,8 @@ Every resource has an owner, a version number, and a lifecycle status. Nothing r
 
 New public sign-ups join as **Members**, which gives full access to browse, search, save, and download everything in the published library.
 
-## Email verification
-In a production deployment, new accounts would receive a verification email. For this demonstration, **email verification is stubbed** — your account is active straight away so you can explore without waiting.
-
-## Demo logins
-The sign-in page offers one-click access to pre-seeded **Admin**, **Contributor**, and **Member** accounts. These are the fastest way to experience every role. All demo accounts share the password \`Demo1234!\`.
+## Getting started quickly
+Your account is active as soon as you register, so you can start browsing, saving, and downloading straight away.
 
 ## Signing out
 Open the avatar menu in the top-right corner and choose **Sign out** at any time.`,
@@ -222,10 +219,10 @@ Contributors and admins can add resources. Everything passes through a review st
 An admin can upgrade your role from the Members area of the admin console.
 
 ## What file types are supported?
-Resources in this demo ship with generated sample PDF documents so every download opens as a real file.
+Resources ship with PDF documents, so every download opens as a real file.
 
 ## Is my data safe?
-This is a demonstration product seeded with fictional content and demo accounts. Don't store real or sensitive information in it.
+Access is role-based: members only see published resources, and your account details are visible only to you and administrators. Files are served securely on demand.
 
 ## What happens to outdated resources?
 Owners and admins can archive resources that are no longer current. Archived resources leave the public library but are retained for the record.

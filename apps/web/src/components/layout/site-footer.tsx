@@ -64,7 +64,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t">
         <div className="container-page flex flex-col items-center justify-between gap-3 py-6 text-sm text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} ResourceVault. A demonstration product.</p>
+          <p>© {new Date().getFullYear()} ResourceVault. All rights reserved.</p>
           <p className="flex items-center gap-4">
             <span>Built for the Institute for Community &amp; Public Health</span>
           </p>

@@ -6,7 +6,7 @@ ResourceVault is a centralised, production-quality resource library for
 professional and membership organisations — one beautiful, searchable home for
 the guides, templates, research, toolkits, checklists, and policies a community
 relies on. It ships with a full review workflow, role-based access, a help
-centre, and a richly seeded demo so evaluators can experience every role
+centre, and a richly seeded database so you can experience every role
 instantly.
 
 This repository is a **pnpm + Turborepo monorepo** with a React frontend, an
@@ -21,7 +21,7 @@ database layer, and configuration.
   dark/light mode, smooth micro-interactions, fully responsive and accessible.
 - **64 seeded resources** across 8 categories, every lifecycle state, with real
   generated PDF downloads, contributor avatars, and branded cover art.
-- **Three roles** — Admin, Contributor, Member — with one-click demo logins.
+- **Three roles** — Admin, Contributor, Member — with role-based access control.
 - **Full lifecycle** — draft → pending review → published → archived, with an
   admin review queue.
 - **Search & filters** — full-text search, category/type/tag filters, sorting,
@@ -81,7 +81,7 @@ pnpm install
 # 2. Start MongoDB (Docker). Skip if you already run Mongo locally.
 pnpm db:up
 
-# 3. Seed the database (creates demo users, 8 categories, 64 resources + PDFs)
+# 3. Seed the database (creates seeded users, 8 categories, 64 resources + PDFs)
 pnpm seed
 
 # 4. Run the API and web client together
@@ -99,16 +99,16 @@ Then open:
 
 > One-liner after install + Mongo is up: `pnpm seed && pnpm dev`.
 
-### Demo accounts
+### Seeded accounts (local development)
 
-The login screen offers **one-click "Explore as …" buttons** for every role.
-All demo accounts use the password `Demo1234!`.
+Seeding creates ready-to-use accounts so you can sign in as each role while
+developing. They all use the password `Demo1234!`.
 
 | Role        | Email                              |
 | ----------- | ---------------------------------- |
-| Admin       | `admin@resourcevault.demo`         |
-| Contributor | `contributor@resourcevault.demo`   |
-| Member      | `member@resourcevault.demo`        |
+| Admin       | `admin@resourcevault.xyz`         |
+| Contributor | `contributor@resourcevault.xyz`   |
+| Member      | `member@resourcevault.xyz`        |
 
 Anyone can also self-register; new public accounts join as **Members**.
 
@@ -117,7 +117,7 @@ Anyone can also self-register; new public accounts join as **Members**.
 ## 🔧 Environment variables
 
 Copy `.env.example` to `.env` at the repo root (the API and seed read it).
-Sensible defaults are baked in, so the demo runs with **no configuration**.
+Sensible defaults are baked in, so it runs with **no configuration**.
 
 | Variable               | Default                                      | Used by |
 | ---------------------- | -------------------------------------------- | ------- |
@@ -157,7 +157,7 @@ Per-app: `pnpm --filter @resourcevault/api dev`,
 - `/` — landing page
 - `/library` — browse, search & filter the library
 - `/resources/:slug` — resource detail + download
-- `/login`, `/register` — auth (demo logins on `/login`)
+- `/login`, `/register` — auth
 - `/app` — member/contributor dashboard
 - `/app/saved`, `/app/contributions`, `/app/submit`, `/app/profile`
 - `/app/admin` — analytics · `/app/admin/review` · `/app/admin/users` · `/app/admin/categories`
@@ -190,4 +190,4 @@ from `/files/:name`.
 - **No broken images** — resource/category covers are generated, on-brand
   gradients; avatars use a deterministic avatar service.
 - **Real downloads** — every resource ships a generated PDF document.
-- This is a **demonstration** product seeded with fictional content.
+- Seeded with realistic, sector-specific fictional content for local development.

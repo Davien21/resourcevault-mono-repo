@@ -57,7 +57,7 @@ export function AuthShell({
             </ul>
           </div>
           <p className="text-sm text-primary-foreground/70">
-            A demonstration product for the Institute for Community &amp; Public Health.
+            The knowledge library of the Institute for Community &amp; Public Health.
           </p>
         </div>
       </div>

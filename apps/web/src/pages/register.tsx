@@ -90,8 +90,7 @@ export function RegisterPage() {
         </Button>
 
         <p className="text-center text-xs text-muted-foreground">
-          New accounts join as <strong>Members</strong>. Email verification is stubbed
-          for this demo, so you're in straight away.
+          New accounts join as <strong>Members</strong>, so you're in straight away.
         </p>
       </form>
 

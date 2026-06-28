@@ -635,8 +635,8 @@ function FinalCta() {
             Give your members a library worth visiting
           </h2>
           <p className="relative mx-auto mt-4 max-w-xl text-primary-foreground/85">
-            Create a free account and explore every role — admin, contributor, and
-            member — in a fully seeded, production-quality demo.
+            Create a free account and explore everything ResourceVault offers —
+            browse, save, contribute, and curate.
           </p>
           <div className="relative mt-8 flex flex-wrap items-center justify-center gap-3">
             <Button asChild size="lg" className="bg-background text-foreground hover:bg-background/90">
@@ -645,7 +645,7 @@ function FinalCta() {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/40 bg-transparent text-primary-foreground hover:bg-white/10">
-              <Link to="/login">Explore with demo logins</Link>
+              <Link to="/login">Sign in</Link>
             </Button>
           </div>
         </div>

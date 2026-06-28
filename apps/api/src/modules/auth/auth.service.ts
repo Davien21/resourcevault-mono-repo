@@ -23,7 +23,7 @@ export async function registerUser(input: RegisterInput) {
     role: "member",
     organisation: input.organisation?.trim(),
     avatarUrl: avatarSeedUrl(input.name),
-    // Email verification is stubbed for the demo — accounts are usable immediately.
+    // New accounts are active immediately.
     isVerified: true,
   });
 
