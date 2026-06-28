@@ -8,10 +8,20 @@ build
 .turbo
 *.tsbuildinfo
 
+# provider link/deploy state
+.vercel
+
 # env
 .env
 .env.local
 .env.*.local
+.deploy.env
+
+# production deploy env (per-app secrets read by `golive`); keep examples tracked
+.env.prod
+**/.env.prod
+!.env.prod.example
+!**/.env.prod.example
 
 # logs
 logs
@@ -30,3 +40,4 @@ pnpm-debug.log*
 .vscode/*
 !.vscode/extensions.json
 .idea
+.vercel

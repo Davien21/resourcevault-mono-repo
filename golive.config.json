@@ -1,0 +1,25 @@
+{
+  "domain": "resourcevault.xyz",
+  "apps": {
+    "web": {
+      "path": "apps/web",
+      "provider": "vercel",
+      "cwd": ".",
+      "projectName": "resourcevault-web",
+      "envFile": ".env.prod"
+    },
+    "api": {
+      "path": "apps/api",
+      "provider": "railway",
+      "cwd": ".",
+      "envFile": ".env.prod",
+      "database": "mongo",
+      "databaseUrlVar": "MONGODB_URI"
+    }
+  },
+  "email": {
+    "provider": "brevo",
+    "domain": "resourcevault.xyz",
+    "from": "support@resourcevault.xyz"
+  }
+}
