@@ -25,9 +25,10 @@ export function createApp() {
     })
   );
 
-  const allowedOrigins = [env.CLIENT_URL, "http://localhost:3000"].filter(
-    Boolean
-  );
+  const allowedOrigins = [
+    ...env.CLIENT_URL.split(",").map((o) => o.trim()),
+    "http://localhost:3000",
+  ].filter(Boolean);
   app.use(
     cors({
       origin: (origin, callback) => {
